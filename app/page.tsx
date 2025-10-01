@@ -15,7 +15,7 @@ export default function Page() {
           <a href="mailto:simon@venturiwebconsulting.com" className="badge hover:bg-neutral-900">Email me</a>
           <a href="/projects" className="badge hover:bg-neutral-900">Projects</a>
         </div>
-        
+
         {projectImages.length > 0 && (
           <ImageCarousel images={projectImages} />
         )}
