@@ -1,3 +1,15 @@
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Contact",
+  description: "Get in touch with Simon Venturi for web development services. Custom websites, performance optimization, SEO, and technical consulting.",
+  openGraph: {
+    title: "Contact - Venturi Web Consulting",
+    description: "Get in touch with Simon Venturi for web development services. Custom websites, performance optimization, SEO, and technical consulting.",
+    url: "https://venturiwebconsulting.com/contact",
+  },
+};
+
 export default function ContactPage() {
   return (
     <section className="section">

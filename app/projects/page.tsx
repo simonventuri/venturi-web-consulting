@@ -1,4 +1,15 @@
 import Link from "next/link";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Projects",
+  description: "Web development projects by Simon Venturi. Case studies of custom websites, performance optimization, and technical solutions for businesses.",
+  openGraph: {
+    title: "Projects - Venturi Web Consulting",
+    description: "Web development projects by Simon Venturi. Case studies of custom websites, performance optimization, and technical solutions.",
+    url: "https://venturiwebconsulting.com/projects",
+  },
+};
 
 export default function ProjectsPage() {
   return (

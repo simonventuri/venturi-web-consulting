@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            width: 1200px;
+            height: 630px;
+            background: linear-gradient(135deg, #000000 0%, #1a1a1a 100%);
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .container {
+            text-align: center;
+            z-index: 2;
+            max-width: 800px;
+            padding: 40px;
+        }
+
+        .logo {
+            font-size: 72px;
+            font-weight: 900;
+            letter-spacing: -2px;
+            margin-bottom: 16px;
+            color: #ffffff;
+        }
+
+        .subtitle {
+            font-size: 24px;
+            letter-spacing: 6px;
+            color: #a3a3a3;
+            margin-bottom: 40px;
+            font-weight: 400;
+        }
+
+        .tagline {
+            font-size: 48px;
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 24px;
+            color: #ffffff;
+        }
+
+        .description {
+            font-size: 24px;
+            color: #d4d4d4;
+            line-height: 1.4;
+            font-weight: 400;
+        }
+
+        .accent {
+            position: absolute;
+            top: -100px;
+            right: -100px;
+            width: 300px;
+            height: 300px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 50%;
+            z-index: 1;
+        }
+
+        .accent2 {
+            position: absolute;
+            bottom: -150px;
+            left: -150px;
+            width: 400px;
+            height: 400px;
+            background: rgba(255, 255, 255, 0.03);
+            border-radius: 50%;
+            z-index: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="accent"></div>
+    <div class="accent2"></div>
+    <div class="container">
+        <div class="logo">VENTURI</div>
+        <div class="subtitle">WEB CONSULTING</div>
+        <div class="tagline">Turning ideas into<br>websites that work</div>
+        <div class="description">Clean, fast web products by Simon Venturi</div>
+    </div>
+</body>
+
+</html>
