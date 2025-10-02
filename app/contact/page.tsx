@@ -24,7 +24,6 @@ export default function ContactPage() {
             <div>
               <h2 className="h2 mb-4">Let's talk</h2>
               <p className="text-neutral-300 mb-4">
-                Whether you need a new website, want to optimise an existing one, or have questions about a project,
                 I'm here to help. Drop me a line and I'll get back to you within 24 hours.
               </p>
               <a

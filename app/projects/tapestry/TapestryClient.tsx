@@ -24,10 +24,10 @@ export default function TapestryClient({ data }: TapestryClientProps) {
         const checkMobile = () => {
             setIsMobile(window.innerWidth < 768);
         };
-        
+
         checkMobile();
         window.addEventListener('resize', checkMobile);
-        
+
         return () => window.removeEventListener('resize', checkMobile);
     }, []);
 
@@ -58,17 +58,15 @@ export default function TapestryClient({ data }: TapestryClientProps) {
                             <div
                                 key={i}
                                 onClick={() => openLightbox(i)}
-                                className={`overflow-hidden border border-neutral-800 bg-neutral-900 h-80 transition-colors ${
-                                    !isMobile ? 'hover:border-neutral-600 cursor-pointer group' : ''
-                                }`}
+                                className={`overflow-hidden border border-neutral-800 bg-neutral-900 h-80 transition-colors ${!isMobile ? 'hover:border-neutral-600 cursor-pointer group' : ''
+                                    }`}
                             >
                                 {/* eslint-disable-next-line @next/next/no-img-element */}
                                 <img
                                     src={src}
                                     alt={`Tapestry screenshot ${i + 1}`}
-                                    className={`w-full h-full object-cover object-center transition-transform duration-300 ${
-                                        !isMobile ? 'group-hover:scale-105' : ''
-                                    }`}
+                                    className={`w-full h-full object-cover object-center transition-transform duration-300 ${!isMobile ? 'group-hover:scale-105' : ''
+                                        }`}
                                 />
                             </div>
                         ))}
