@@ -36,13 +36,13 @@ export default function ImageCarousel({ images }: CarouselProps) {
     }
 
     return (
-        <div className="relative w-full h-64 sm:h-80 bg-neutral-900 overflow-hidden">
+        <div className="relative w-full h-80 sm:h-96 bg-neutral-900 overflow-hidden">
             {shuffledImages.map((image, index) => (
                 <img
                     key={image}
                     src={image}
                     alt={`Project showcase ${index + 1}`}
-                    className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ease-in-out ${index === currentIndex ? 'opacity-100' : 'opacity-0'
+                    className={`absolute inset-0 w-full h-full object-cover object-top transition-opacity duration-1000 ease-in-out ${index === currentIndex ? 'opacity-100' : 'opacity-0'
                         }`}
                 />
             ))}

@@ -54,7 +54,7 @@ export default function CookieConsent() {
     if (!showBanner) return null;
 
     return (
-        <div className="fixed bottom-16 left-0 right-0 bg-neutral-900 border-t border-neutral-700 p-4 z-50">
+        <div className="fixed bottom-0 left-0 right-0 bg-neutral-900 border-t border-neutral-700 p-4 z-50">
             <div className="container flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
                 <div className="flex-1">
                     <p className="text-sm text-neutral-300">

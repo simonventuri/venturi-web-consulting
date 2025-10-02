@@ -19,7 +19,7 @@ export default function ProjectsPage() {
         <div className="grid-auto">
           <article className="card">
             <h3 className="text-lg font-semibold">Tapestry Vertical Gardens</h3>
-            <p className="mt-2 text-neutral-300">SEO‑oriented brochure site + content system for a living‑wall specialist.</p>
+            <p className="mt-2 text-neutral-300">Bespoke SEO‑oriented brochure site + project and content management system for a living‑wall specialist.</p>
             <Link className="badge mt-4 inline-flex hover:bg-neutral-900" href="/projects/tapestry">View case study</Link>
           </article>
 

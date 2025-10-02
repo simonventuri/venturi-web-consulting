@@ -56,7 +56,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body>
+      <body className="flex flex-col min-h-screen">
         <GoogleAnalytics />
         <header className="border-b border-neutral-800 relative">
           <div className="container flex items-center justify-between py-5">
@@ -67,8 +67,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             <Navigation />
           </div>
         </header>
-        <main className="pb-16">{children}</main>
-        <footer className="fixed bottom-0 left-0 right-0 bg-black border-t border-neutral-800 py-3">
+        <main className="flex-1">{children}</main>
+        <footer className="bg-black border-t border-neutral-800 py-3 mt-auto">
           <div className="container text-center text-sm text-neutral-400">
             © Venturi Web Consulting {new Date().getFullYear()}
           </div>
