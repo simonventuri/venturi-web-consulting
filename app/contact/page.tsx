@@ -35,7 +35,7 @@ export default function ContactPage() {
             </div>
 
             <div className="pt-6">
-              <h3 className="text-lg font-semibold mb-3">What I can help with:</h3>
+              <h3 className="text-lg mb-3">What I can help with:</h3>
               <ul className="space-y-2 text-neutral-300">
                 <li>• Custom website development</li>
                 <li>• Performance optimisation</li>

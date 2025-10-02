@@ -28,16 +28,16 @@ a {
 }
 
 .h1 {
-    @apply text-3xl sm:text-4xl font-bold tracking-tight;
+    @apply text-3xl sm:text-4xl font-thin tracking-tight;
 }
 
 .h2 {
-    @apply text-2xl sm:text-3xl font-bold tracking-tight;
+    @apply text-2xl sm:text-3xl font-thin tracking-tight;
 }
 
 .lead {
     @apply text-neutral-300;
-    font-size: 1.15em;
+    font-size: 1.1em;
 }
 
 .card {
