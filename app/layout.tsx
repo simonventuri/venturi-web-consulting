@@ -61,7 +61,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <header className="bg-orange-600 border-b border-orange-700 fixed top-0 left-0 right-0 z-50">
           <div className="container flex items-center justify-between py-5">
             <Link href="/" className="leading-none hover:opacity-80 transition-opacity">
-              <div className="font-extrabold tracking-[0.18rem] text-6xl sm:text-7xl text-white">VENTURI</div>
+              <div className="tracking-[0.18rem] text-4xl sm:text-6xl text-white">VENTURI</div>
             </Link>
             <Navigation />
           </div>
