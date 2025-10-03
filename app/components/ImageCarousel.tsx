@@ -36,7 +36,7 @@ export default function ImageCarousel({ images }: CarouselProps) {
     }
 
     return (
-        <div className="relative w-full h-80 sm:h-96 bg-neutral-900 overflow-hidden">
+        <div className="relative w-full h-80 sm:h-96 bg-neutral-100 overflow-hidden">
             {shuffledImages.map((image, index) => (
                 <img
                     key={image}

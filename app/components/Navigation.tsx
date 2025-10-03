@@ -21,14 +21,14 @@ export default function Navigation() {
         onClick={() => setIsMenuOpen(!isMenuOpen)}
         aria-label="Toggle menu"
       >
-        <span className={`w-5 h-0.5 bg-neutral-100 transition-transform ${isMenuOpen ? 'rotate-45 translate-y-1.5' : ''}`}></span>
-        <span className={`w-5 h-0.5 bg-neutral-100 transition-opacity ${isMenuOpen ? 'opacity-0' : ''}`}></span>
-        <span className={`w-5 h-0.5 bg-neutral-100 transition-transform ${isMenuOpen ? '-rotate-45 -translate-y-1.5' : ''}`}></span>
+        <span className={`w-5 h-0.5 bg-neutral-900 transition-transform ${isMenuOpen ? 'rotate-45 translate-y-1.5' : ''}`}></span>
+        <span className={`w-5 h-0.5 bg-neutral-900 transition-opacity ${isMenuOpen ? 'opacity-0' : ''}`}></span>
+        <span className={`w-5 h-0.5 bg-neutral-900 transition-transform ${isMenuOpen ? '-rotate-45 -translate-y-1.5' : ''}`}></span>
       </button>
 
       {/* Mobile Menu Overlay */}
       {isMenuOpen && (
-        <div className="md:hidden absolute top-full left-0 right-0 bg-black border-b border-neutral-800 z-50">
+        <div className="md:hidden absolute top-full left-0 right-0 bg-white border-b border-neutral-200 z-50">
           <nav className="container py-6">
             <div className="flex flex-col gap-4">
               <Link 

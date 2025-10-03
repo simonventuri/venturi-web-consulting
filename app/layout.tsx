@@ -58,18 +58,17 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en">
       <body className="flex flex-col min-h-screen">
         <GoogleAnalytics />
-        <header className="border-b border-neutral-800 relative">
+        <header className="border-b border-neutral-200 relative">
           <div className="container flex items-center justify-between py-5">
             <Link href="/" className="leading-none hover:opacity-80 transition-opacity">
-              <div className="font-extrabold tracking-[0.18rem] text-4xl sm:text-5xl text-orange-500">VENTURI</div>
-              <div className="tracking-[0.24rem] sm:tracking-[0.4rem] text-sm sm:text-base -mt-1 text-neutral-400">WEB CONSULTING</div>
+              <div className="font-extrabold tracking-[0.18rem] text-6xl sm:text-7xl text-orange-500">VENTURI.</div>
             </Link>
             <Navigation />
           </div>
         </header>
         <main className="flex-1">{children}</main>
-        <footer className="bg-black border-t border-neutral-800 py-3 mt-auto">
-          <div className="container text-center text-sm text-neutral-400">
+        <footer className="bg-white border-t border-neutral-200 py-3 mt-auto">
+          <div className="container text-center text-sm text-neutral-600">
             © Venturi Web Consulting {new Date().getFullYear()}
           </div>
         </footer>

@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 :root {
-    color-scheme: dark;
+    color-scheme: light;
 }
 
 html,
@@ -12,7 +12,7 @@ body {
 }
 
 body {
-    @apply bg-black text-neutral-100;
+    @apply bg-white text-neutral-900;
 }
 
 a {
@@ -36,16 +36,16 @@ a {
 }
 
 .lead {
-    @apply text-neutral-300;
+    @apply text-neutral-600;
     font-size: 1.1em;
 }
 
 .card {
-    @apply rounded-2xl border border-neutral-800 p-5 shadow-sm bg-neutral-950;
+    @apply rounded-2xl border border-neutral-200 p-5 shadow-sm bg-neutral-50;
 }
 
 .badge {
-    @apply inline-flex items-center gap-2 rounded-full border border-neutral-700 px-3 py-1 text-sm;
+    @apply inline-flex items-center gap-2 rounded-full border border-neutral-300 px-3 py-1 text-sm;
 }
 
 .grid-auto {
@@ -53,5 +53,5 @@ a {
 }
 
 hr {
-    @apply border-neutral-800;
+    @apply border-neutral-200;
 }
