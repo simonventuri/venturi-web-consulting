@@ -23,12 +23,12 @@ export default function ContactPage() {
           <div className="space-y-6">
             <div>
               <h2 className="h2 mb-4">Let's talk</h2>
-              <p className="text-neutral-300 mb-4">
+              <p className="mb-4">
                 I'm here to help. Drop me a line and I'll get back to you within 24 hours.
               </p>
               <a
                 href="mailto:simon@venturiwebconsulting.com"
-                className="badge hover:bg-neutral-900 text-lg px-6 py-3"
+                className="badge hover:bg-neutral-200 text-lg px-6 py-3"
               >
                 simon@venturiwebconsulting.com
               </a>
@@ -36,7 +36,7 @@ export default function ContactPage() {
 
             <div className="pt-6">
               <h3 className="text-lg mb-3">What I can help with:</h3>
-              <ul className="space-y-2 text-neutral-300">
+              <ul className="space-y-2">
                 <li>• Custom website development</li>
                 <li>• Performance optimisation</li>
                 <li>• SEO-focused implementations</li>

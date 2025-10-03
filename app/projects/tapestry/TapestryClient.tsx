@@ -58,7 +58,7 @@ export default function TapestryClient({ data }: TapestryClientProps) {
                             <div
                                 key={i}
                                 onClick={() => openLightbox(i)}
-                                className={`overflow-hidden border border-neutral-800 bg-neutral-900 h-80 transition-colors ${!isMobile ? 'hover:border-neutral-600 cursor-pointer group' : ''
+                                className={`overflow-hidden border border-neutral-200 bg-neutral-50 h-80 transition-colors ${!isMobile ? 'hover:border-neutral-400 cursor-pointer group' : ''
                                     }`}
                             >
                                 {/* eslint-disable-next-line @next/next/no-img-element */}
