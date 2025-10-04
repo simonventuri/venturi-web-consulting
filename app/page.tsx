@@ -34,7 +34,7 @@ export default function Page() {
               <ImageCarousel images={projectImages} />
             </div>
           )}
-          
+
           <div className="flex justify-center">
             <a href="/projects" className="badge hover:bg-neutral-200">Projects</a>
           </div>

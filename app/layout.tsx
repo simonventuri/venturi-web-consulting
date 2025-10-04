@@ -56,6 +56,11 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+        <link rel="alternate icon" href="/favicon.ico" />
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+      </head>
       <body className="flex flex-col min-h-screen">
         <GoogleAnalytics />
         <header className="bg-orange-600 border-b border-orange-700 fixed top-0 left-0 right-0 z-50">
