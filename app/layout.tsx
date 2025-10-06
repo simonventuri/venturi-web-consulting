@@ -56,20 +56,24 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+        <link rel="alternate icon" href="/favicon.ico" />
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+      </head>
       <body className="flex flex-col min-h-screen">
         <GoogleAnalytics />
-        <header className="border-b border-neutral-800 relative">
+        <header className="bg-orange-600 border-b border-orange-700 fixed top-0 left-0 right-0 z-50">
           <div className="container flex items-center justify-between py-5">
             <Link href="/" className="leading-none hover:opacity-80 transition-opacity">
-              <div className="font-extrabold tracking-[0.18rem] text-4xl sm:text-5xl text-orange-500">VENTURI</div>
-              <div className="tracking-[0.24rem] sm:tracking-[0.4rem] text-sm sm:text-base -mt-1 text-neutral-400">WEB CONSULTING</div>
+              <div className="tracking-[0.18rem] text-4xl sm:text-6xl text-white font-thin">VENTURI</div>
             </Link>
             <Navigation />
           </div>
         </header>
-        <main className="flex-1">{children}</main>
-        <footer className="bg-black border-t border-neutral-800 py-3 mt-auto">
-          <div className="container text-center text-sm text-neutral-400">
+        <main className="flex-1 pt-32 sm:pt-36">{children}</main>
+        <footer className="bg-white border-t border-neutral-200 py-3 mt-auto">
+          <div className="container text-center text-sm text-neutral-600">
             © Venturi Web Consulting {new Date().getFullYear()}
           </div>
         </footer>

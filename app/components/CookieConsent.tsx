@@ -54,10 +54,10 @@ export default function CookieConsent() {
     if (!showBanner) return null;
 
     return (
-        <div className="fixed bottom-0 left-0 right-0 bg-neutral-900 border-t border-neutral-700 p-4 z-50">
+        <div className="fixed bottom-0 left-0 right-0 bg-neutral-100 border-t border-neutral-200 p-4 z-50">
             <div className="container flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
                 <div className="flex-1">
-                    <p className="text-sm text-neutral-300">
+                    <p className="text-sm text-neutral-700">
                         This website uses cookies to improve your experience and analyze website traffic.
                         By clicking "Accept", you consent to the use of cookies for analytics purposes.
                     </p>
@@ -65,13 +65,13 @@ export default function CookieConsent() {
                 <div className="flex gap-3 flex-shrink-0">
                     <button
                         onClick={declineCookies}
-                        className="badge border-neutral-600 hover:bg-neutral-800 text-sm"
+                        className="badge border-neutral-300 hover:bg-neutral-200 text-sm"
                     >
                         Decline
                     </button>
                     <button
                         onClick={acceptCookies}
-                        className="badge hover:bg-neutral-700 text-sm"
+                        className="badge hover:bg-neutral-200 text-sm"
                     >
                         Accept
                     </button>
