@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     default: "Venturi Web Consulting - Clean, Fast Web Products",
     template: "%s | Venturi Web Consulting"
   },
-  description: "Professional web development services by Simon Venturi. Building pragmatic, performant websites and apps for businesses. Based in South Hams, UK.",
+  description: "Professional web development services by Simon Venturi. Building pragmatic, high performing websites and apps for businesses. Based in South Hams, UK.",
   keywords: ["web development", "web design", "software engineer", "Next.js", "React", "SEO", "performance optimization", "South Hams", "UK"],
   authors: [{ name: "Simon Venturi" }],
   creator: "Simon Venturi",
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     url: "https://venturiwebconsulting.com",
     siteName: "Venturi Web Consulting",
     title: "Venturi Web Consulting - Clean, Fast Web Products",
-    description: "Professional web development services by Simon Venturi. Building pragmatic, performant websites and apps for businesses.",
+    description: "Professional web development services by Simon Venturi. Building pragmatic, high performing websites and apps for businesses.",
     images: [
       {
         url: "/og-image.jpg",
@@ -45,7 +45,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Venturi Web Consulting - Clean, Fast Web Products",
-    description: "Professional web development services by Simon Venturi. Building pragmatic, performant websites and apps for businesses.",
+    description: "Professional web development services by Simon Venturi. Building pragmatic, high performing websites and apps for businesses.",
     images: ["/og-image.jpg"],
   },
   alternates: {
