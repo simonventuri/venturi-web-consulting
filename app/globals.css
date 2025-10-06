@@ -35,7 +35,7 @@ main a:not(.bg-orange-600):not(.badge) {
 }
 
 .h1 {
-    @apply text-4xl sm:text-5xl font-thin tracking-tight mb-10;
+    @apply text-2xl sm:text-3xl font-semibold tracking-tight mb-10;
 }
 
 .h2 {
