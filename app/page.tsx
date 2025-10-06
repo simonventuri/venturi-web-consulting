@@ -80,7 +80,7 @@ export default function Page() {
             <h2 className="h2 mb-4">Experience</h2>
             <div className="bg-white p-6 border border-neutral-200">
               <p className="text-lg text-neutral-600 mb-4">
-                Over the years, I've built a diverse portfolio of web solutions across multiple industries:
+                With 30 years of experience, I've built a diverse portfolio of web solutions across multiple industries:
               </p>
               <ul className="space-y-3 text-neutral-600">
                 <li className="flex items-start">
