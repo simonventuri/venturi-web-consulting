@@ -24,17 +24,18 @@ export default function Page() {
       <section id="intro" className="section !pt-0">
         <div className="container">
           <h1 className="h1 mb-4">Turning ideas into results — for good.</h1>
-          <p className="lead mb-6">I'm Simon Venturi &mdash; software engineer & cofounder of <a href="https://www.mvfglobal.com/" target="_blank" className="underline">MVF</a>, which in 2013 was the <a href="https://www.hiscox.co.uk/business-blog/tech-track-100-mvf-became-fastest-growing-tech-company" target="_blank" className="underline">fastest growing tech company in the UK</a>. I helped build MVF into a global enterprise. I now have the freedom to pursue passion projects and I'm passionate about helping ventures succeed online. </p>
-          <p className="lead mb-6">I build clear, high-performing websites for organisations that want to grow. From small businesses to social enterprises, I believe the web should work better for everyone &mdash; and I help make that happen.</p>
+          <p className="lead mb-6">I'm Simon Venturi &mdash; software engineer & cofounder of <a href="https://www.mvfglobal.com/" target="_blank" className="underline">MVF</a>, which in 2013 was the <a href="https://www.hiscox.co.uk/business-blog/tech-track-100-mvf-became-fastest-growing-tech-company" target="_blank" className="underline">fastest growing tech company in the UK</a>. I helped build MVF into a global enterprise, then relocated to the South Hams in 2019 with the freedom to pursue passion projects.</p>
+          <p className="lead mb-6">I build clear, high-performing websites for organisations that want to grow. I love helping ventures succeed online.</p>
           <div className="flex justify-center mb-8 md:hidden">
             <a href="/contact" className="inline-flex items-center justify-center px-4 py-2 text-lg font-semibold text-white bg-orange-600 hover:bg-orange-800 transition-colors rounded-md">GET IN TOUCH</a>
           </div>
-          <p className="lead mb-6">I relocated from London to the South Hams in 2019. I have a wealth of web experience and know that when it comes to ideas, templated, one size fits all solutions don't always fit. Whether you need a new website, want to optimise an existing one, or have questions about a project, I'm here to help.</p>
+          <p className="lead mb-6">I have a wealth of web experience and know that when it comes to ideas, templated, one size fits all solutions don't always fit.</p>
+          <p className="lead mb-6">From small businesses to social enterprises, I believe the web should work better for everyone. Whether you need a new website, want to optimise an existing one, or have questions about a project, I'm here to help.</p>
           <div className="justify-center hidden md:flex">
             <a href="/contact" className="inline-flex items-center justify-center px-4 py-2 text-lg font-semibold text-white bg-orange-600 hover:bg-orange-800 transition-colors rounded-md">GET IN TOUCH</a>
           </div>
         </div>
-      </section>
+      </section >
 
       <section id="work" className="section bg-neutral-50">
         <div className="container">
