@@ -21,14 +21,18 @@ export default function Page() {
   return (
     <>
       <StructuredData />
-      <section id="intro" className="section">
+      <section id="intro" className="section !pt-0">
         <div className="container">
-          <h1 className="h1 mb-4">Turning ideas into websites that work.</h1>
-          <p className="lead mb-6">I'm Simon Venturi — software engineer & cofounder of <a href="https://www.mvfglobal.com/" target="_blank" className="underline">MVF</a>, which in 2013 was the <a href="https://www.hiscox.co.uk/business-blog/tech-track-100-mvf-became-fastest-growing-tech-company" target="_blank" className="underline">fastest growing tech company in the UK</a>. I build pragmatic, high performing sites and apps.</p>
-          <p className="lead mb-6">I worked in London for many years and relocated to the South Hams in 2019. I have a wealth of web experience and know that when it comes to ideas, templated, one size fits all solutions don't always fit.</p>
+          <h1 className="h1 mb-4">Turning ideas into results — for good.</h1>
+          <p className="lead mb-6">I'm Simon Venturi &mdash; software engineer & cofounder of <a href="https://www.mvfglobal.com/" target="_blank" className="underline">MVF</a>, which in 2013 was the <a href="https://www.hiscox.co.uk/business-blog/tech-track-100-mvf-became-fastest-growing-tech-company" target="_blank" className="underline">fastest growing tech company in the UK</a></p>
+          <p className="lead mb-6">I build clear, high-performing websites for organisations that want to grow. From small businesses to social enterprises, I believe the web should work better for everyone &mdash; and I help make that happen.</p>
+          <div className="flex justify-center mb-8 md:hidden">
+            <a href="/contact" className="inline-flex items-center justify-center px-6 py-3 text-lg font-medium text-white bg-orange-600 hover:bg-orange-800 transition-colors border-2 border-orange-800">GET IN TOUCH</a>
+          </div>
+          <p className="lead mb-6">I relocated from London to the South Hams in 2019. I have a wealth of web experience and know that when it comes to ideas, templated, one size fits all solutions don't always fit.</p>
           <p className="lead mb-6">I'm passionate about helping ventures grow and succeed online. Whether you need a new website, want to optimise an existing one, or have questions about a project, I'm here to help. </p>
-          <div className="flex justify-center">
-            <a href="/contact" className="inline-flex items-center justify-center px-6 py-3 text-lg font-medium text-white bg-orange-600 hover:bg-orange-700 transition-colors">GET IN TOUCH</a>
+          <div className="justify-center hidden md:flex">
+            <a href="/contact" className="inline-flex items-center justify-center px-6 py-3 text-lg font-medium text-white bg-orange-600 hover:bg-orange-800 transition-colors border-2 border-orange-800">GET IN TOUCH</a>
           </div>
         </div>
       </section>
@@ -76,11 +80,11 @@ export default function Page() {
           </div>
 
           {/* Past Work Experience */}
-          <div>
+          <div className="mt-16">
             <h2 className="h2 mb-4">Experience</h2>
             <div className="bg-white p-6 border border-neutral-200">
               <p className="text-lg text-neutral-600 mb-4">
-                With 30 years of experience, I've built a diverse portfolio of web solutions across multiple industries:
+                I’ve been building for the web since the early 2000s, combining design thinking with practical engineering. I've built a diverse portfolio of web solutions across multiple industries:
               </p>
               <ul className="space-y-3 text-neutral-600">
                 <li className="flex items-start">
@@ -108,7 +112,7 @@ export default function Page() {
           </div>
 
           <div className="flex justify-center mt-8">
-            <a href="/contact" className="inline-flex items-center justify-center px-6 py-3 text-lg font-medium text-white bg-orange-600 hover:bg-orange-700 transition-colors">GET IN TOUCH</a>
+            <a href="/contact" className="inline-flex items-center justify-center px-6 py-3 text-lg font-medium text-white bg-orange-600 hover:bg-orange-800 transition-colors border-2 border-orange-800">GET IN TOUCH</a>
           </div>
         </div>
       </section>

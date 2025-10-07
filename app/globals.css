@@ -26,6 +26,10 @@ main a:not(.bg-orange-600):not(.badge) {
     @apply underline-offset-4 decoration-orange-600 text-orange-600 hover:text-orange-600 hover:decoration-orange-500;
 }
 
+p {
+    @apply leading-loose;
+}
+
 .container {
     @apply mx-auto max-w-3xl px-6;
 }

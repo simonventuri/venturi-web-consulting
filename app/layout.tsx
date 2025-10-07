@@ -63,7 +63,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       </head>
       <body className="flex flex-col min-h-screen">
         <GoogleAnalytics />
-        <header className="bg-orange-600 border-b border-orange-700 fixed top-0 left-0 right-0 z-50">
+        <header className="bg-orange-600 border-b-2 border-orange-800 fixed top-0 left-0 right-0 z-50">
           <div className="container flex items-center justify-between py-5">
             <Link href="/" className="leading-none hover:opacity-80 transition-opacity">
               <div className="tracking-[0.18rem] text-4xl sm:text-6xl text-white font-thin">VENTURI</div>
@@ -75,6 +75,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <footer className="bg-white border-t border-neutral-200 py-3 mt-auto">
           <div className="container text-center text-sm text-neutral-600">
             © Venturi Web Consulting {new Date().getFullYear()}
+          </div>
+          <div className="container text-center text-sm text-neutral-600">
+            Based in <a href="https://www.google.com/maps/place/South+Pool,+Kingsbridge,+UK" target="_blank" className="underline">South Pool</a>, working with people across Devon & the UK
           </div>
         </footer>
         <CookieConsent />
