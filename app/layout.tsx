@@ -63,7 +63,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       </head>
       <body className="flex flex-col min-h-screen">
         <GoogleAnalytics />
-        <header className="bg-orange-600 border-b-2 border-orange-800 fixed top-0 left-0 right-0 z-50">
+        <header className="bg-orange-600 fixed top-0 left-0 right-0 z-50">
           <div className="container flex items-center justify-between py-5">
             <Link href="/" className="leading-none hover:opacity-80 transition-opacity">
               <div className="tracking-[0.18rem] text-4xl sm:text-6xl text-white font-thin">VENTURI</div>
