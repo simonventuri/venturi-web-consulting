@@ -10,8 +10,6 @@ export default function Navigation() {
     <>
       {/* Desktop Navigation */}
       <nav className="hidden md:flex gap-5 text-base text-white">
-        <Link className="hover:underline hover:text-orange-100" href="/">Home</Link>
-        <Link className="hover:underline hover:text-orange-100" href="/projects">Projects</Link>
         <Link className="hover:underline hover:text-orange-100" href="/contact">Contact</Link>
       </nav>
 
@@ -31,20 +29,6 @@ export default function Navigation() {
         <div className="md:hidden absolute top-full left-0 right-0 bg-white border-b border-neutral-200 z-50">
           <nav className="container py-6">
             <div className="flex flex-col gap-4">
-              <Link 
-                className="hover:underline text-lg" 
-                href="/"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                Home
-              </Link>
-              <Link 
-                className="hover:underline text-lg" 
-                href="/projects"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                Projects
-              </Link>
               <Link 
                 className="hover:underline text-lg" 
                 href="/contact"

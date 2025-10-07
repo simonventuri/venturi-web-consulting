@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 
 export default function ContactPage() {
   return (
-    <section className="section">
+    <section className="section !pt-0">
       <div className="container">
         <h1 className="h1 mb-6">Get in touch</h1>
         <div className="max-w-2xl">
