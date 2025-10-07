@@ -74,7 +74,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <main className="flex-1 pt-32 sm:pt-36">{children}</main>
         <footer className="bg-white border-t border-neutral-200 py-3 mt-auto">
           <div className="container text-center text-sm text-neutral-600">
-            © Venturi Web Consulting {new Date().getFullYear()}
+            © Venturi {new Date().getFullYear()}
           </div>
           <div className="container text-center text-sm text-neutral-600">
             Based in <a href="https://www.google.com/maps/place/South+Pool,+Kingsbridge,+UK" target="_blank" className="underline">South Pool</a>, working with people across Devon & the UK
