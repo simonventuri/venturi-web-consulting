@@ -87,15 +87,13 @@ function LocalPage({ tapestryData }: { tapestryData: Record<string, unknown> }) 
         <div className="container">
           <div className="flex flex-col-reverse md:flex-row gap-6 md:gap-10 items-start">
             <div className="flex-1 min-w-0">
-              <h1 className="text-5xl sm:text-7xl font-black uppercase leading-none tracking-tight mb-8">
-                WEBSITES.<br />
-                <span className="text-green-800">WEB APPS.</span><br />
-                IT SUPPORT.
+              <h1 className="text-3xl sm:text-5xl font-black uppercase leading-none tracking-tight mb-3">
+                WEBSITES<br />
+                <span className="text-green-800">WEB APPS</span><br />
+                IT SUPPORT
               </h1>
-              <div className="flex items-center gap-3 mb-6">
-                <div className="h-0.5 w-6 bg-green-800 flex-shrink-0" />
-                <p className="text-neutral-600 font-medium">Clear advice. Calm support.</p>
-                <div className="h-0.5 w-6 bg-green-800 flex-shrink-0" />
+              <div className="mb-6">
+                <p className="text-lg text-neutral-600 font-medium">Clear advice. Calm support.</p>
               </div>
               <div className="bg-neutral-100 rounded-xl p-4 flex items-center gap-3">
                 <svg viewBox="0 0 24 24" fill="currentColor" className="w-6 h-6 text-green-800 flex-shrink-0">
@@ -332,17 +330,17 @@ function DefaultPage({ tapestryData }: { tapestryData: Record<string, unknown> }
   );
 }
 
-export default async function Page({ searchParams }: { searchParams: Promise<{ local?: string }> }) {
-  const { local } = await searchParams;
+export default async function Page({ searchParams }: { searchParams: Promise<{ global?: string }> }) {
+  const { global: globalParam } = await searchParams;
   const cookieStore = await cookies();
-  const isLocal = local === "1" || cookieStore.get("local")?.value === "1";
+  const isGlobal = globalParam === "1" || cookieStore.get("global")?.value === "1";
 
   const tapestryPath = path.join(process.cwd(), "content", "projects", "tapestry.json");
   const tapestryData = JSON.parse(fs.readFileSync(tapestryPath, "utf8"));
 
-  if (isLocal) {
-    return <LocalPage tapestryData={tapestryData} />;
+  if (isGlobal) {
+    return <DefaultPage tapestryData={tapestryData} />;
   }
 
-  return <DefaultPage tapestryData={tapestryData} />;
+  return <LocalPage tapestryData={tapestryData} />;
 }

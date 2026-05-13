@@ -57,12 +57,12 @@ export const metadata: Metadata = {
 
 export default async function RootLayout({ children }: { children: React.ReactNode }) {
   const cookieStore = await cookies();
-  const isLocal = cookieStore.get("local")?.value === "1";
+  const isGlobal = cookieStore.get("global")?.value === "1";
   return (
-    <html lang="en" {...(isLocal ? { "data-local": "1" } : {})}>
+    <html lang="en" {...(!isGlobal ? { "data-local": "1" } : {})}>
       <head>
         <LocalModeScript />
-        <link rel="icon" href={isLocal ? "/favicon-local.svg" : "/favicon.svg"} type="image/svg+xml" />
+        <link rel="icon" href={isGlobal ? "/favicon.svg" : "/favicon-local.svg"} type="image/svg+xml" />
         <link rel="alternate icon" href="/favicon.ico" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
       </head>
@@ -82,7 +82,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
             © Venturi {new Date().getFullYear()}
           </div>
           <div className="container text-center text-sm text-neutral-600">
-            Based in <a href="https://www.google.com/maps/place/South+Pool,+Kingsbridge,+UK" target="_blank" className="underline">South Pool</a>, {isLocal ? "covering the South Hams and beyond." : "working with people across Devon & the UK"}
+            Based in <a href="https://www.google.com/maps/place/South+Pool,+Kingsbridge,+UK" target="_blank" className="underline">South Pool</a>, {isGlobal ? "working with people across Devon & the UK" : "covering the South Hams and beyond."}
           </div>
         </footer>
         <CookieConsent />
