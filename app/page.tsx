@@ -332,8 +332,10 @@ function DefaultPage({ tapestryData }: { tapestryData: Record<string, unknown> }
   );
 }
 
-export default function Page({ searchParams }: { searchParams: { local?: string } }) {
-  const isLocal = searchParams.local === "1" || cookies().get("local")?.value === "1";
+export default async function Page({ searchParams }: { searchParams: Promise<{ local?: string }> }) {
+  const { local } = await searchParams;
+  const cookieStore = await cookies();
+  const isLocal = local === "1" || cookieStore.get("local")?.value === "1";
 
   const tapestryPath = path.join(process.cwd(), "content", "projects", "tapestry.json");
   const tapestryData = JSON.parse(fs.readFileSync(tapestryPath, "utf8"));

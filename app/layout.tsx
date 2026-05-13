@@ -55,8 +55,9 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
-  const isLocal = cookies().get("local")?.value === "1";
+export default async function RootLayout({ children }: { children: React.ReactNode }) {
+  const cookieStore = await cookies();
+  const isLocal = cookieStore.get("local")?.value === "1";
   return (
     <html lang="en" {...(isLocal ? { "data-local": "1" } : {})}>
       <head>
