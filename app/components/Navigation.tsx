@@ -9,13 +9,13 @@ export default function Navigation() {
   return (
     <>
       {/* Desktop Navigation */}
-      <nav className="hidden md:flex gap-5 text-base text-white">
+      <nav className="hidden md:flex gap-5 text-base text-white local-hide">
         <Link className="hover:underline hover:text-orange-100" href="/contact">Contact</Link>
       </nav>
 
       {/* Mobile Burger Menu Button */}
       <button
-        className="md:hidden flex flex-col gap-1 p-2"
+        className="md:hidden flex flex-col gap-1 p-2 local-hide"
         onClick={() => setIsMenuOpen(!isMenuOpen)}
         aria-label="Toggle menu"
       >

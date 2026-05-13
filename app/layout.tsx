@@ -3,7 +3,9 @@ import Link from "next/link";
 import Navigation from "./components/Navigation";
 import GoogleAnalytics from "./components/GoogleAnalytics";
 import CookieConsent from "./components/CookieConsent";
+import { LocalModeScript } from "./components/LocalModeScript";
 import { Metadata } from "next";
+import { cookies } from "next/headers";
 
 export const metadata: Metadata = {
   title: {
@@ -54,10 +56,12 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
+  const isLocal = cookies().get("local")?.value === "1";
   return (
-    <html lang="en">
+    <html lang="en" {...(isLocal ? { "data-local": "1" } : {})}>
       <head>
-        <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+        <LocalModeScript />
+        <link rel="icon" href={isLocal ? "/favicon-local.svg" : "/favicon.svg"} type="image/svg+xml" />
         <link rel="alternate icon" href="/favicon.ico" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
       </head>
@@ -77,7 +81,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             © Venturi {new Date().getFullYear()}
           </div>
           <div className="container text-center text-sm text-neutral-600">
-            Based in <a href="https://www.google.com/maps/place/South+Pool,+Kingsbridge,+UK" target="_blank" className="underline">South Pool</a>, working with people across Devon & the UK
+            Based in <a href="https://www.google.com/maps/place/South+Pool,+Kingsbridge,+UK" target="_blank" className="underline">South Pool</a>, {isLocal ? "covering the South Hams and beyond." : "working with people across Devon & the UK"}
           </div>
         </footer>
         <CookieConsent />

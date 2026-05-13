@@ -31,7 +31,7 @@ p {
 }
 
 .container {
-    @apply mx-auto max-w-3xl px-6;
+    @apply mx-auto max-w-4xl px-6;
 }
 
 .section {
@@ -65,4 +65,44 @@ p {
 
 hr {
     @apply border-neutral-200;
+}
+
+/* Local mode: hide nav contact link */
+[data-local="1"] .local-hide {
+    display: none !important;
+}
+
+/* Local mode: swap orange brand colour to forest green */
+[data-local="1"] .bg-orange-600 {
+    background-color: #166534 !important;
+}
+[data-local="1"] .hover\:bg-orange-800:hover {
+    background-color: #14532d !important;
+}
+[data-local="1"] .text-orange-600 {
+    color: #166534 !important;
+}
+[data-local="1"] .decoration-orange-600 {
+    text-decoration-color: #166534 !important;
+}
+[data-local="1"] .hover\:text-orange-600:hover {
+    color: #166534 !important;
+}
+[data-local="1"] .hover\:decoration-orange-500:hover {
+    text-decoration-color: #15803d !important;
+}
+[data-local="1"] .hover\:text-orange-100:hover {
+    color: #dcfce7 !important;
+}
+[data-local="1"] .section a:not(.badge),
+[data-local="1"] .container a:not(nav a):not(.badge),
+[data-local="1"] main a:not(.badge) {
+    color: #166534;
+    text-decoration-color: #166534;
+}
+[data-local="1"] .section a:not(.badge):hover,
+[data-local="1"] .container a:not(nav a):not(.badge):hover,
+[data-local="1"] main a:not(.badge):hover {
+    color: #166534;
+    text-decoration-color: #15803d;
 }
