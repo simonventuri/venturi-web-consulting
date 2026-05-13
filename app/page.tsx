@@ -140,7 +140,7 @@ function LocalPage({ tapestryData }: { tapestryData: Record<string, unknown> }) 
       {/* About */}
       <section id="about" className="section">
         <div className="container">
-          <p className="lead mb-6">I&apos;m Simon Venturi — software engineer and co-founder of <a href="https://www.mvfglobal.com/" target="_blank" rel="noopener noreferrer">MVF</a>, which in 2013 was the <a href="https://www.hiscox.co.uk/business-blog/tech-track-100-mvf-became-fastest-growing-tech-company" target="_blank" rel="noopener noreferrer">fastest growing tech company in the UK</a>. After helping build MVF into a global business, I relocated to the South Hams in 2019 and now put that same expertise to work for local people and organisations.</p>
+          <p className="lead mb-6">I&apos;m Simon Venturi, a software engineer with 25+ years of experience. I relocated to the South Hams in 2019 and now put that expertise to work for local people and organisations.</p>
           <p className="lead mb-6">I&apos;m equally at home building a bespoke website as I am helping someone untangle a confusing email setup, get their domain pointing in the right direction, or figure out why their existing site isn&apos;t doing what it should. Whatever the issue, I&apos;ll give you straightforward advice and sort it out calmly and without jargon.</p>
           <p className="lead">No question is too basic. If something isn&apos;t working the way it should, or you&apos;re just not sure where to start, I&apos;m very happy to help. And if I don&apos;t know the answer, I&apos;ll tell you straight rather than string you along.</p>
         </div>
